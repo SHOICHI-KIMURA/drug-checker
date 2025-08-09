@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手術前内服薬チェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>手術前内服薬チェッカー</h1>
+        <form id="drug-form">
+            <div class="form-group">
+                <label for="drug-name">薬剤名:</label>
+                <input type="text" id="drug-name" name="drug-name" placeholder="例: アスピリン" required>
+            </div>
+            <div class="form-group">
+                <label for="ope-date">手術予定日:</label>
+                <input type="date" id="ope-date" name="ope-date" required>
+            </div>
+            <button type="submit">確認する</button>
+        </form>
+        <div id="result-container">
+            <h2>確認結果</h2>
+            <ul id="result-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
